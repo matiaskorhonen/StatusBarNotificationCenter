@@ -334,7 +334,7 @@ extension StatusBarNotificationCenter {
         snapshotView!.backgroundColor = UIColor.clearColor()
         
         let view = baseWindow.snapshotViewAfterScreenUpdates(true)
-        snapshotView!.addSubview(view)
+        snapshotView!.addSubview(view!)
         notificationWindow.rootViewController?.view.addSubview(snapshotView!)
         notificationWindow.rootViewController?.view.sendSubviewToBack(snapshotView!)
     }
